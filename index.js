@@ -1,5 +1,4 @@
 let date = new Date();
-
 let currentTime = document.querySelector("p");
 let months = [
   "January",
@@ -13,7 +12,7 @@ let months = [
   "September",
   "October",
   "November",
-  "December"
+  "December",
 ];
 let month = date.getMonth();
 
@@ -57,10 +56,10 @@ function show(event) {
 
   axios.get(url).then(showTemperature);
 }
-let button = document.querySelector("button");
+let button = document.querySelector(".search");
 button.addEventListener("click", show);
 
-let location = document.querySelector(".loc");
+let place = document.querySelector(".loc");
 
 function currentLocation() {
   function showPosition(position) {
@@ -93,5 +92,4 @@ function currentLocation() {
   }
   navigator.geolocation.getCurrentPosition(showPosition);
 }
-location.addEventListener("click", currentLocation);
-//let h1 = document.querySelector("h1");
+place.addEventListener("click", currentLocation);
