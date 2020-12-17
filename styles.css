@@ -53,7 +53,7 @@ p {
 .r2 {
   display: grid;
   grid-template-columns: auto auto;
-  padding: 20px;
+  padding: 5px;
 }
 hr {
   height: 1px;
